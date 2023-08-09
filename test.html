@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-
+<title>TodoList</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,15 +71,15 @@
                         <button class="home-link-button" onclick="goToHomeOnClickHandle()"><i class="fa-solid fa-house"></i></button>
                     </div>
                     <header>
-                        <div class="todolist-header-items">
-                            <input type="text" class="text-input w-f" placeholder="write..."
-                            onkeyup="addTodoOnKeyUpHandle(event, this);">
-                           
-                        </div>
                         <div class="searchBox">
                             <input type="button" class="button btn-all" value="전체 : 0">
                             <input type="button" class="button btn-after" value="완료 : 0">
                             <input type="button" class="button btn-before" value="미완료 : 0">
+                        </div>
+                        <div class="todolist-header-items">
+                            <input type="text" class="text-input w-f" placeholder="write..."
+                            onkeyup="addTodoOnKeyUpHandle(event, this);">
+                           
                         </div>
                         <div class="todolist-header-items">
                             <button class="btn w-f" onclick="addTodoButtonOnClickHandle();">Enter</button>

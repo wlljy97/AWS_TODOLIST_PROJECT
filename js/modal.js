@@ -43,9 +43,9 @@ const modifyModal = (todo) => {
                 </header>
                     <main class="modal-main">
                         <p class="modal-message">
-                            Fix it
+                            modify
                         </p>
-                    <input type="text" class="text-input w-f" value="${todo.todoContent}" onkeyup="handleEnterKeyPress(event, ${todo.id})">
+                    <input type="text" class="text-input w-f" placeholder="write..." value="${todo.todoContent}" onkeyup="handleEnterKeyPress(event, ${todo.id})">
                 </main>
                 <footer class="modal-footer">
                     <button class="btn" onclick="modifySubmitButtonOnClick(${todo.id}); closeModal();">Check</button>

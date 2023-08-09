@@ -75,10 +75,13 @@
 
 .button {
     margin: 1px 3px 3px 2px;
-    border: 1px solid #dbdbdb;
-    border-radius: 1px;
+    border: 1px solid #dbdbdb00;
+    border-radius: 3px;
+    font-weight: 700;
     width: 31.4%;
     justify-content: space-between;
+    align-items: center;
+    background-color: #dbdbdb00;
 }
 
 .complet-chkboxs {
