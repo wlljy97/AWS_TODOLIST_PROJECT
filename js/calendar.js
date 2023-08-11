@@ -1,9 +1,9 @@
 
-        let nowMonth = new Date();  // 현재 달을 페이지를 로드한 날의 달로 초기화
-        let today = new Date();     // 페이지를 로드한 날짜를 저장
-        today.setHours(0, 0, 0, 0);    // 비교 편의를 위해 today의 시간을 초기화
+        let nowMonth = new Date(); 
+        let today = new Date();
+        today.setHours(0, 0, 0, 0);    
 
-        // 달력 생성 : 해당 달에 맞춰 테이블을 만들고, 날짜를 채워 넣는다.
+        
         function buildCalendar() {
 
             let firstDate = new Date(nowMonth.getFullYear(), nowMonth.getMonth(), 1);     // 이번달 1일

@@ -46,6 +46,7 @@
     
 }
 
+
 .todo-title {
     font-size: 30px;
     font-weight: 700;
@@ -70,6 +71,7 @@
     border-radius: 2px;
     background-color: #6d404000;
     
+    
 }
 
 .button {
@@ -81,6 +83,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #dbdbdb00;
+    /* cursor: pointer; */
 }
 
 .complet-chkboxs {
@@ -109,6 +112,8 @@
     color: #0a6eb1;
     /* background-color: #23b41e; */
 }
+
+
 
 .item-center {
     flex-grow: 1;

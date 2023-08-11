@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="./css/calendar.css">
 
 </head>
-<body>
+
+<body >
     <div id="root">
         <div class="container">
             <aside class="sidebar">
@@ -73,15 +74,23 @@
                         Todo List
                     </div>
                     <div>
+                   
+
                         <div class="currentTime"></div>
                         <script>
                             function updateCurrentTime() {
                                 const currentTimeElement = document.querySelector(".currentTime");
                                 const now = new Date();
+
+                                const year = now.getFullYear();
+                                const month = (now.getMonth() + 1).toString().padStart(2, '0');
+                                const day = now.getDate().toString().padStart(2, '0');
+
                                 const hours = now.getHours().toString().padStart(2, '0');
                                 const minutes = now.getMinutes().toString().padStart(2, '0');
                                 const seconds = now.getSeconds().toString().padStart(2, '0');
-                                const currentTimeString = ` ${hours}:${minutes}:${seconds}`;
+
+                                const currentTimeString = ` "${year}-${month}-${day}"  "${hours}:${minutes}:${seconds}"`;
                                 currentTimeElement.textContent = currentTimeString;
                             }
                             
@@ -92,9 +101,10 @@
                     </div>
                     <header>
                         <div class="searchBox">
-                            <input type="button" class="button btn-all" value="전체 : 0">
-                            <input type="button" class="button btn-after" value="완료 : 0">
-                            <input type="button" class="button btn-before" value="미완료 : 0">
+                            <input type="button" class="button btn-all"  value="전체 : 0">
+                            <input type="button" class="button btn-after"  value="완료 : 0">
+                            <input type="button" class="button btn-before"  value="미완료 : 0">
+
                         </div>
                         <div class="todolist-header-items">
                             <input type="text" class="text-input w-f" placeholder="write..."
