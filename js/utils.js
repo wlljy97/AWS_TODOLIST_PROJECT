@@ -11,6 +11,8 @@ class DateUtils {
         const year = date.getFullYear();
         const month = this.leftPad(date.getMonth() + 1);
         const day = this.leftPad(date.getDate());
+        
+
 
         return [year, month, day].join("-");
     }

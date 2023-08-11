@@ -12,7 +12,8 @@
     padding: 10px;
     width: 500px;
     height: 700px;
-    background-color: #6d404094;
+    /* background-color: #6d404094; */
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
     overflow: hidden;
 }
 

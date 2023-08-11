@@ -14,6 +14,19 @@ const addTodoOnKeyUpHandle = (event, inputElement) => {
     }
 }
 
+// const updateCurrentTime = () => {
+//     const currentTimeElement = document.getElementById("currentTime");
+//     const now = new Date();
+//     const hours = now.getHours().toString().padStart(2, '0');
+//     const minutes = now.getMinutes().toString().padStart(2, '0');
+//     const seconds = now.getSeconds().toString().padStart(2, '0');
+//     const currentTimeString = `현재 시간: ${hours}:${minutes}:${seconds}`;
+//     currentTimeElement.textContent = currentTimeString;
+// }
+
+// // 초당 한 번씩 updateCurrentTime 함수 호출
+// setInterval(updateCurrentTime, 1000);
+
 // 전체,완료,미완료 Count
 const updateTotalCount = () => {
     const totalCount = TodoListService.getInstance().todoList.length;
@@ -32,6 +45,7 @@ const updateIncompleteCount = () => {
     const incompleteCountButton = document.querySelector(".btn-before");
     incompleteCountButton.value = `미완료 : ${incompleteCount}`;
 };
+
 
 
 
@@ -57,8 +71,12 @@ const deleteTodoOnClickHandle = (target) => {
     updateIncompleteCount();
 }
 
+
+
 const generateTodoObj = () => {
     const todoContent = document.querySelector(".todolist-header-items .text-input").value;
+
+    
 
     const todoObj = {
         id: 0,
